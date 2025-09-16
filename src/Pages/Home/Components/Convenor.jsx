@@ -19,22 +19,39 @@ export default function Convenor() {
           <div className="space-y-6">
             <div className="text-gray-800 leading-relaxed text-justify space-y-4">
               <p className="text-lg">
-                It is my privilege and blessing to welcome you all to the <span className="font-semibold">46th year of Brothers Ramleela.</span>
-                What started decades ago as a humble effort to bring our community together has now grown
-                into one of Delhi’s most loved cultural and devotional events.
-                Ramleela is not just about staging the Ramayan – it is about keeping alive our heritage,
-                inspiring our youth, and spreading the eternal message of <span className="font-semibold">dharma, truth,and unity.</span>
-                On behalf of our committee, I invite you and your family to join us this year at <span className="font-semibold">Brothers
-                  Ramleela Ground, Bhai Parmanand Colony</span>, from <span className="font-semibold">22nd September to 2nd October 2025.</span>
+                It is my privilege and blessing to welcome you all to the{" "}
+                <span className="font-semibold">
+                  46th year of Brothers Ramleela.
+                </span>
+                What started decades ago as a humble effort to bring our
+                community together has now grown into one of Delhi’s most loved
+                cultural and devotional events. Ramleela is not just about
+                staging the Ramayan – it is about keeping alive our heritage,
+                inspiring our youth, and spreading the eternal message of{" "}
+                <span className="font-semibold">dharma, truth,and unity.</span>
+                On behalf of our committee, I invite you and your family to join
+                us this year at{" "}
+                <span className="font-semibold">
+                  Brothers Ramleela Ground, Bhai Parmanand Colony
+                </span>
+                , from{" "}
+                <span className="font-semibold">
+                  22nd September to 2nd October 2025.
+                </span>
                 May Lord Ram’s blessings be with you always.Rama.
               </p>
 
-              <p className="text-lg font-semibold mt-4">— Shri Harvansh Gulati Ji, Convener (Sanyojak),<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Brothers Ramleela Committee</p>
+              <p className="text-lg font-semibold mt-4 text-left">
+                -Shri Harvansh Gulati Ji,
+                <br />
+                Convener (Sanyojak),
+                <br />
+                Brothers Ramleela Committee
+              </p>
             </div>
           </div>
         </div>
       </div>
     </section>
   );
-};
-
+}

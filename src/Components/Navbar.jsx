@@ -1,5 +1,4 @@
 import { useState } from "react";
-import { FaYoutube, FaPhoneAlt } from "react-icons/fa";
 import { Link } from "react-router-dom";
 
 export default function Navbar() {
@@ -10,7 +9,11 @@ export default function Navbar() {
       <nav className="max-w-7xl mx-auto flex items-center justify-between px-4 py-3 md:py-4">
         {/* Logo */}
         <Link to="/" className="flex items-center space-x-3 cursor-pointer">
-          <div className="w-10 h-10 rounded-full bg-yellow-500"></div>
+          <img
+            src="/assets/logo.jpg"
+            alt="Brothers Ramleela Logo"
+            className="w-12 h-12 rounded-full object-cover"
+          />
           <div className="leading-tight">
             <h1 className="text-white text-lg font-semibold">
               Brothers Ramleela
@@ -23,25 +26,17 @@ export default function Navbar() {
         <ul className="hidden md:flex space-x-8 text-white font-medium">
           <li><Link to="/about" className="hover:text-yellow-400">About Us</Link></li>
           <li><Link to="/gallery" className="hover:text-yellow-400">Gallery & Participation</Link></li>
-          <li><Link to="/contactus" className="hover:text-yellow-400">Contact Us</Link></li>
+          <li><a href="/contactus#contact" className="hover:text-yellow-400">Contact Us</a></li>
         </ul>
 
         {/* Right Buttons */}
-        <div className="hidden md:flex items-center space-x-4">
+        <div className="hidden md:flex items-center space-x-3">
           <a
-            href="#live"
+            href="/contactus"
             className="flex items-center space-x-2 bg-yellow-500 text-[#7B0000] font-semibold px-4 py-2 rounded hover:bg-yellow-400 transition"
           >
-            <FaYoutube />
-            <span>Watch Live</span>
+            <span>₹ Donate</span>
           </a>
-          <Link
-            to="/contact"
-            className="flex items-center space-x-2 text-white hover:text-yellow-400 transition"
-          >
-            <FaPhoneAlt />
-            <span>Contact</span>
-          </Link>
         </div>
 
         {/* Mobile Hamburger */}
@@ -59,15 +54,15 @@ export default function Navbar() {
       {/* Mobile Menu */}
       {isOpen && (
         <div className="md:hidden bg-[#7B0000] text-white px-6 py-4 space-y-4">
-          <Link to="/about" className="block hover:text-yellow-400">About Us</Link>
-          <Link to="/gallery" className="block hover:text-yellow-400">Gallery & Participation</Link>
-          <Link to="/contactus" className="block hover:text-yellow-400">Contact Us</Link>
+          <Link to="/about" className="block hover:text-yellow-400" onClick={() => setIsOpen(false)}>About Us</Link>
+          <Link to="/gallery" className="block hover:text-yellow-400" onClick={() => setIsOpen(false)}>Gallery & Participation</Link>
+          <a href="/contactus#contact" className="block hover:text-yellow-400" onClick={() => setIsOpen(false)}>Contact Us</a>
           <a
-            href="#live"
-            className="flex items-center space-x-2 bg-yellow-500 text-[#7B0000] font-semibold px-4 py-2 rounded hover:bg-yellow-400 transition"
+            href="/contactus"
+            className="inline-flex items-center space-x-2 bg-yellow-500 text-[#7B0000] font-semibold px-4 py-2 rounded hover:bg-yellow-400 transition"
+            onClick={() => setIsOpen(false)}
           >
-            <FaYoutube />
-            <span>Watch Live</span>
+            <span>₹ Donate</span>
           </a>
         </div>
       )}

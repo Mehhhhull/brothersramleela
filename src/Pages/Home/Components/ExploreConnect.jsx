@@ -1,4 +1,4 @@
-import { User, Calendar, Image, Heart, DollarSign, Phone } from "lucide-react";
+import { User, Calendar, Image, Heart, Phone } from "lucide-react";
 import { Link } from "react-router-dom";
 
 export default function ExploreConnect() {
@@ -7,7 +7,7 @@ export default function ExploreConnect() {
     { name: "Events", icon: <Calendar size={20} />, to: "/events", type: "internal" },
     { name: "Gallery", icon: <Image size={20} />, to: "/gallery", type: "internal" },
     { name: "Volunteer", icon: <Heart size={20} />, to: "https://forms.gle/your-volunteer-form", type: "external" },
-    { name: "Donate", icon: <DollarSign size={20} />, to: "/contactus", type: "internal" },
+    { name: "Donate", icon: <span className="font-bold text-lg">₹</span>, to: "/contactus#donations", type: "internal" },
     { name: "Contact Us", icon: <Phone size={20} />, to: "/contactus", type: "internal" },
   ];
 

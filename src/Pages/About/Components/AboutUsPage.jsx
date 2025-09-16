@@ -36,10 +36,18 @@ const AboutUsPage = () => {
   ];
 
   const scheduleEvents = [
-    { date: "Oct 15, 2024", event: "Ramleela Inauguration", time: "6:00 PM", highlight: true },
-    { date: "Oct 16-22, 2024", event: "Daily Episodes", time: "7:00 PM - 9:00 PM", highlight: false },
-    { date: "Oct 23, 2024", event: "Ram-Bharat Milap", time: "6:00 PM", highlight: true },
-    { date: "Oct 24, 2024", event: "Dussehra - Effigy Burning", time: "8:00 PM", highlight: true }
+  { date: "21 Sep", event: "Bhaajan Sandhya (Shree Rahul Chaudhary Ji)" },
+  { date: "22 Sep", event: "Mata Ki Chawki" },
+  { date: "23 Sep", event: "Ram Janam - Sharavan Kumar Vadh" },
+  { date: "24 Sep", event: "Tarkha Vadh- Sita Sayambar" },
+  { date: "25 Sep", event: "Ram Vanvaas" },
+  { date: "26 Sep", event: "Dashrath death-Bharat Milap" },
+  { date: "27 Sep", event: "Panchvati /Ravan Entry" },
+  { date: "28 Sep", event: "Vali Vadh" },
+  { date: "29 Sep", event: "Lanka Dehan/Kumbhkaran Death" },
+  { date: "30 Sep", event: "Laxman Moorcha" },
+  { date: "1 Oct", event: "Megnath Ravaan Vadh" },
+  { date: "2 Oct", event: "Dusshara Fair" }
   ];
 
   const nextMember = () => {
@@ -59,7 +67,7 @@ const AboutUsPage = () => {
         <section className="mb-16">
           {/* Header */}
           <h1 className="text-5xl lg:text-6xl font-bold mb-6 text-center lg:text-left" style={{ color: '#8B2635' }}>
-            46 Years of Devotion Tradition & Culture
+            46 Years of Devotion, <br/> Tradition & Culture
           </h1>
           
           <div className="flex flex-col lg:flex-row items-center gap-12">
@@ -113,8 +121,8 @@ const AboutUsPage = () => {
             Meet Our Committee Members
           </h2>
 
-          <div className="relative max-w-4xl mx-auto px-4">
-            <div className="flex items-center gap-2 md:gap-8">
+          <div className="relative max-w-4xl mx-auto px-2 sm:px-4">
+            <div className="flex items-center justify-center gap-2 md:gap-8">
               <button
                 onClick={prevMember}
                 className="p-1 md:p-2 rounded-full text-white hover:opacity-80 transition-opacity z-10 flex-shrink-0"
@@ -125,21 +133,21 @@ const AboutUsPage = () => {
                 <ChevronLeft size={24} className="hidden md:block" />
               </button>
 
-              <div className="flex-1 bg-white rounded-lg shadow-lg p-4 md:p-8">
-                <div className="flex flex-col md:flex-row items-center gap-6 md:gap-12">
-                  <div className="md:w-2/5 w-full">
+              <div className="flex-1 bg-white rounded-lg shadow-lg p-2 sm:p-4 md:p-8 min-w-[220px]">
+                <div className="flex flex-col md:flex-row items-center gap-4 md:gap-12">
+                  <div className="w-full md:w-2/5 flex justify-center mb-4 md:mb-0">
                     <img
                       src={committeeMembers[currentMember].image}
                       alt={committeeMembers[currentMember].name}
-                      className="w-64 h-64 md:w-96 md:h-96 rounded-xl object-cover mx-auto shadow-2xl"
+                      className="w-40 h-40 sm:w-64 sm:h-64 md:w-96 md:h-96 rounded-xl object-cover mx-auto shadow-2xl"
                     />
                   </div>
-                  <div className="md:w-3/5 w-full text-center md:text-left">
-                    <h3 className="text-2xl md:text-3xl font-bold mb-2 text-gray-800">
+                  <div className="w-full md:w-3/5 text-center md:text-left">
+                    <h3 className="text-xl sm:text-2xl md:text-3xl font-bold mb-2 text-gray-800">
                       {committeeMembers[currentMember].name}
                     </h3>
-                    <p className="text-base md:text-lg mb-4" style={{ color: '#8B2635' }}>{committeeMembers[currentMember].subtitle}</p>
-                    <p className="text-sm md:text-base text-gray-700 leading-relaxed">{committeeMembers[currentMember].description}</p>
+                    <p className="text-sm sm:text-base md:text-lg mb-2 md:mb-4" style={{ color: '#8B2635' }}>{committeeMembers[currentMember].subtitle}</p>
+                    <p className="text-xs sm:text-sm md:text-base text-gray-700 leading-relaxed">{committeeMembers[currentMember].description}</p>
                   </div>
                 </div>
               </div>
@@ -147,7 +155,7 @@ const AboutUsPage = () => {
               <button
                 onClick={nextMember}
                 className="p-1 md:p-2 rounded-full text-white hover:opacity-80 transition-opacity z-10 flex-shrink-0"
-                style={{ backgroundColor: '#8B2635' }}
+                style={{ backgroundColor: '#8B2635', alignSelf: 'center' }}
                 aria-label="Next member"
               >
                 <ChevronRight size={20} className="md:hidden" />
@@ -156,12 +164,12 @@ const AboutUsPage = () => {
             </div>
 
             {/* Member indicators */}
-            <div className="flex justify-center mt-4 md:mt-6 space-x-2">
+            <div className="flex justify-center mt-2 sm:mt-4 md:mt-6 space-x-2">
               {committeeMembers.map((_, index) => (
                 <button
                   key={index}
                   onClick={() => setCurrentMember(index)}
-                  className={`w-2 h-2 md:w-3 md:h-3 rounded-full transition-colors ${index === currentMember ? 'bg-red-800' : 'bg-gray-300'
+                  className={`w-2 h-2 sm:w-2.5 sm:h-2.5 md:w-3 md:h-3 rounded-full transition-colors ${index === currentMember ? 'bg-red-800' : 'bg-gray-300'
                     }`}
                   style={index === currentMember ? { backgroundColor: '#8B2635' } : {}}
                   aria-label={`Go to member ${index + 1}`}
@@ -174,46 +182,44 @@ const AboutUsPage = () => {
         {/* Schedule Section */}
         <section className="mb-16">
           <h2 className="text-4xl font-bold text-center mb-12" style={{ color: '#8B2635' }}>
-           Ramleela 2025 Schedule – Brothers Ramleela, Bhai Parmanand Colony
+           Ramleela 2025 Schedule-
           </h2>
 
           <div className="max-w-4xl mx-auto">
             <div className="bg-white rounded-lg shadow-lg p-6">
                 <div className="flex flex-col mb-6 text-gray-700">
                   <div className="flex items-center gap-4">
-                    <Calendar style={{ color: '#8B2635' }} size={18} />
-                    <span className="text-lg">Dates: 22nd September – 2nd October 2025</span>
+                    <span className="w-6 h-6 flex items-center justify-center">
+                      <Calendar style={{ color: '#8B2635' }} size={20} />
+                    </span>
+                    <span className="text-lg font-bold">Dates:</span>
+                    <span className="text-lg">22nd September – 2nd October 2025</span>
                   </div>
                   <div className="flex items-center gap-4 mt-2">
-                    <MapPin style={{ color: '#8B2635' }} size={20} />
-                    <span className="text-lg">Venue: Brothers Ramleela Ground, Bhai Parmanand Colony, Delhi-110009</span>
+                    <span className="w-6 h-6 flex items-center justify-center">
+                      <MapPin style={{ color: '#8B2635' }} size={20} />
+                    </span>
+                    <span className="text-lg font-bold">Venue:</span>
+                    <span className="text-lg">Brothers Ramleela Ground, Bhai Parmanand Colony, <br/>Delhi-110009</span>
                   </div>
                 </div>
 
               <div className="grid gap-4">
-                {scheduleEvents.map((event, index) => (
-                  <div
-                    key={index}
-                    className={`flex flex-col md:flex-row items-start md:items-center gap-4 p-4 rounded-lg border-l-4 ${event.highlight
-                        ? 'bg-red-50'
-                        : 'bg-orange-50'
-                      }`}
-                    style={{ borderLeftColor: event.highlight ? '#8B2635' : '#D97706' }}
-                  >
-                    <div className="flex items-center gap-2">
-                      <Calendar style={{ color: '#8B2635' }} size={18} />
-                      <span className="font-semibold text-gray-800">{event.date}</span>
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                  {scheduleEvents.map((event, index) => (
+                    <div
+                      key={index}
+                      className="flex items-center bg-orange-50 rounded-lg shadow-sm px-3 py-3 gap-3 border-l-4 min-h-[56px]"
+                      style={{ borderLeftColor: '#8B2635' }}
+                    >
+                      <span className="flex items-center justify-center w-6 h-6">
+                        <Calendar style={{ color: '#8B2635' }} size={20} />
+                      </span>
+                      <span className="font-bold text-sm text-gray-800 w-20 flex-shrink-0">{event.date}</span>
+                      <span className="text-sm text-gray-700 flex-1">{event.event}</span>
                     </div>
-                    <div className="flex-1">
-                      <h3 className="font-semibold text-lg text-gray-800 mb-1">{event.event}</h3>
-                    </div>
-                    <div className="flex items-center gap-2">
-                      <Clock className="text-gray-500" size={18} />
-                      <span className="text-gray-700">{event.time}</span>
-                      {event.highlight && <Star className="text-orange-500" size={18} fill="currentColor" />}
-                    </div>
-                  </div>
-                ))}
+                  ))}
+                </div>
               </div>
             </div>
           </div>

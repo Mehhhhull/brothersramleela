@@ -35,7 +35,7 @@ export default function SponsorsSection() {
   return (
     <section
       id="sponsors"
-      className="bg-[#fff6e9] py-12 px-6 md:px-12 lg:px-20 text-center relative overflow-hidden"
+      className="bg-[#fff6e9] pt-4 pb-12 px-6 md:px-12 lg:px-20 text-center relative overflow-hidden"
     >
       {/* Heading */}
       <h2 className="text-3xl md:text-4xl font-bold text-red-800 mb-3">

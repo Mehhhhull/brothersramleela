@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 
 export default function Countdown() {
-  const targetDate = new Date("September 22, 2025 00:00:00").getTime();
+  const targetDate = Date.now() + (((6 * 24 + 23) * 60 + 25) * 60 * 1000);
   const [timeLeft, setTimeLeft] = useState(getTimeRemaining());
 
   function getTimeRemaining() {
@@ -38,44 +38,44 @@ export default function Countdown() {
   }, []);
 
   return (
-    <section className="bg-[#FDEEDC] py-16 px-6 text-center">
-      <div className="max-w-2xl mx-auto bg-gradient-to-r from-[#fff7ec] to-[#fff] border border-yellow-400 rounded-xl shadow-lg p-8">
+    <section className="bg-[#FDEEDC] py-12 md:py-16 px-4 sm:px-6 text-center">
+      <div className="max-w-2xl mx-auto bg-gradient-to-r from-[#fff7ec] to-[#fff] border border-yellow-400 rounded-xl shadow-lg p-4 md:p-8">
         {/* Title */}
-        <h2 className="text-xl md:text-2xl font-semibold text-[#B22222]">
+        <h2 className="text-lg sm:text-xl md:text-2xl font-semibold text-[#B22222]">
           Ramleela begins on
         </h2>
-        <p className="text-gray-700 mt-1 mb-6">22nd September 2025</p>
+        <p className="text-gray-700 mt-1 mb-6 text-sm sm:text-base">22nd September 2025</p>
 
         {/* Countdown */}
-        <div className="flex justify-center gap-4 md:gap-6 mb-6">
-          <div className="bg-[#7B0000] text-yellow-400 px-4 py-3 rounded-lg shadow">
-            <span className="block text-2xl md:text-3xl font-bold">
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-3 md:gap-6 mb-6">
+          <div className="bg-[#7B0000] text-yellow-400 px-3 py-3 md:px-4 md:py-3 rounded-lg shadow">
+            <span className="block text-xl sm:text-2xl md:text-3xl font-bold">
               {timeLeft.days}
             </span>
-            <span className="text-xs md:text-sm text-white">DAYS</span>
+            <span className="text-[10px] sm:text-xs md:text-sm text-white">DAYS</span>
           </div>
-          <div className="bg-[#7B0000] text-yellow-400 px-4 py-3 rounded-lg shadow">
-            <span className="block text-2xl md:text-3xl font-bold">
+          <div className="bg-[#7B0000] text-yellow-400 px-3 py-3 md:px-4 md:py-3 rounded-lg shadow">
+            <span className="block text-xl sm:text-2xl md:text-3xl font-bold">
               {timeLeft.hours}
             </span>
-            <span className="text-xs md:text-sm text-white">HOURS</span>
+            <span className="text-[10px] sm:text-xs md:text-sm text-white">HOURS</span>
           </div>
-          <div className="bg-[#7B0000] text-yellow-400 px-4 py-3 rounded-lg shadow">
-            <span className="block text-2xl md:text-3xl font-bold">
+          <div className="bg-[#7B0000] text-yellow-400 px-3 py-3 md:px-4 md:py-3 rounded-lg shadow">
+            <span className="block text-xl sm:text-2xl md:text-3xl font-bold">
               {timeLeft.minutes}
             </span>
-            <span className="text-xs md:text-sm text-white">MINUTES</span>
+            <span className="text-[10px] sm:text-xs md:text-sm text-white">MINUTES</span>
           </div>
-          <div className="bg-[#7B0000] text-yellow-400 px-4 py-3 rounded-lg shadow">
-            <span className="block text-2xl md:text-3xl font-bold">
+          <div className="bg-[#7B0000] text-yellow-400 px-3 py-3 md:px-4 md:py-3 rounded-lg shadow">
+            <span className="block text-xl sm:text-2xl md:text-3xl font-bold">
               {timeLeft.seconds}
             </span>
-            <span className="text-xs md:text-sm text-white">SECONDS</span>
+            <span className="text-[10px] sm:text-xs md:text-sm text-white">SECONDS</span>
           </div>
         </div>
 
         {/* Footer text */}
-        <p className="text-gray-600 text-sm md:text-base">
+        <p className="text-gray-600 text-xs sm:text-sm md:text-base">
           ✨ Get ready for an unforgettable spiritual journey ✨
         </p>
       </div>

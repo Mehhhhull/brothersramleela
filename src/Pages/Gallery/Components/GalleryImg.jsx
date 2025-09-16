@@ -69,7 +69,7 @@ export function GalleryImg() {
           {/* Image 7 */}
           <div>
             <img
-              src="/assets/ramleela7.jpeg"
+              src="/assets/ramleela2.jpeg"
               alt="Ramleela 7"
               className="w-full h-auto object-cover"
             />
@@ -78,7 +78,7 @@ export function GalleryImg() {
           {/* Image 8 */}
           <div>
             <img
-              src="/assets/ramleela8.jpeg"
+              src="/assets/ramleela2.jpeg"
               alt="Ramleela 8"
               className="w-full h-auto object-cover"
             />
@@ -87,7 +87,7 @@ export function GalleryImg() {
           {/* Image 9 */}
           <div>
             <img
-              src="/assets/ramleela9.jpeg"
+              src="/assets/ramleela2.jpeg"
               alt="Ramleela 9"
               className="w-full h-auto object-cover"
             />
@@ -96,7 +96,7 @@ export function GalleryImg() {
           {/* Image 10 */}
           <div>
             <img
-              src="/assets/ramleela10.jpeg"
+              src="/assets/ramleela2.jpeg"
               alt="Ramleela 10"
               className="w-full h-auto object-cover"
             />
@@ -105,7 +105,7 @@ export function GalleryImg() {
           {/* Image 11 */}
           <div>
             <img
-              src="/assets/ramleela11.jpeg"
+              src="/assets/ramleela2.jpeg"
               alt="Ramleela 11"
               className="w-full h-auto object-cover"
             />
@@ -114,7 +114,7 @@ export function GalleryImg() {
           {/* Image 12 */}
           <div>
             <img
-              src="/assets/ramleela12.jpeg"
+              src="/assets/ramleela2.jpeg"
               alt="Ramleela 12"
               className="w-full h-auto object-cover"
             />
