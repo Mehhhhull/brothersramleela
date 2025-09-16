@@ -57,13 +57,13 @@ export default function Navbar() {
           <Link to="/about" className="block hover:text-yellow-400" onClick={() => setIsOpen(false)}>About Us</Link>
           <Link to="/gallery" className="block hover:text-yellow-400" onClick={() => setIsOpen(false)}>Gallery & Participation</Link>
           <a href="/contactus#contact" className="block hover:text-yellow-400" onClick={() => setIsOpen(false)}>Contact Us</a>
-          <a
-            href="/contactus"
+          <Link
+            to="/contactus"
             className="inline-flex items-center space-x-2 bg-yellow-500 text-[#7B0000] font-semibold px-4 py-2 rounded hover:bg-yellow-400 transition"
             onClick={() => setIsOpen(false)}
           >
             <span>₹ Donate</span>
-          </a>
+          </Link>
         </div>
       )}
     </header>
