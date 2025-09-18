@@ -8,13 +8,18 @@ import Convernor from './Components/Convenor'
 
 const Home = () => {
   return (
-    <>
-      <Hero />
-      <AboutSection/>
-      <Convernor/>
-      <Countdown/>
-      <ExploreConnect/>
-    </>
+    <div className="relative overflow-hidden">
+      <div className="absolute inset-0 pointer-events-none z-0">
+        <div className="w-full h-full bg-[url('/assets/mandala.png')] bg-repeat opacity-10"></div>
+      </div>
+      <div className="relative z-10">
+        <Hero />
+        <AboutSection/>
+        <Convernor/>
+        <Countdown/>
+        <ExploreConnect/>
+      </div>
+    </div>
   )
 }
 

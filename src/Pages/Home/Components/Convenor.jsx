@@ -1,10 +1,13 @@
 export default function Convenor() {
   return (
-    <section className="py-16 px-4 bg-[#FDEEDC]">
-      <div className="max-w-7xl mx-auto">
+    <section className="py-16 px-4 bg-[#FDEEDC] relative overflow-hidden">
+      {/* Mandala Confetti Background behind all content */}
+      <div className="absolute inset-0 w-full h-full bg-[url('/assets/mandala.png')] bg-repeat opacity-10 pointer-events-none z-0"></div>
+  <div className="relative z-10 max-w-7xl mx-auto">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           {/* Left Side - Image */}
-          <div className="relative">
+
+          <div className="relative flex flex-col">
             <div className="rounded-3xl overflow-hidden shadow-lg">
               <img
                 src="/assets/convenor1.jpeg"
@@ -12,6 +15,14 @@ export default function Convenor() {
                 className="w-full h-64 md:h-80 lg:h-96 object-contain"
                 loading="lazy"
               />
+            </div>
+            {/* Convenor name below image on mobile */}
+            <div className="block lg:hidden mt-4 text-center">
+              <p className="text-lg font-semibold">
+                -Shri Harvansh Gulati Ji,<br />
+                Convener (Sanyojak),<br />
+                Brothers Ramleela Committee
+              </p>
             </div>
           </div>
 
@@ -41,11 +52,10 @@ export default function Convenor() {
                 May Lord Ram’s blessings be with you always.Rama.
               </p>
 
-              <p className="text-lg font-semibold mt-4 text-left">
-                -Shri Harvansh Gulati Ji,
-                <br />
-                Convener (Sanyojak),
-                <br />
+              {/* Convenor name in right column on desktop */}
+              <p className="hidden lg:block text-lg font-semibold mt-4 text-left">
+                -Shri Harvansh Gulati Ji,<br />
+                Convener (Sanyojak),<br />
                 Brothers Ramleela Committee
               </p>
             </div>
