@@ -1,104 +1,53 @@
-import { Swiper, SwiperSlide } from "swiper/react";
-import { Navigation, Pagination } from "swiper/modules";
-import "swiper/css";
-import "swiper/css/navigation";
-import "swiper/css/pagination";
-
 export default function SponsorsSection() {
   const sponsors = [
     {
       id: 1,
       name: "Sponsor 1",
-      logo: "https://via.placeholder.com/250x150?text=Sponsor+1",
-      about: "Leading company in stage equipment and lighting solutions.",
+      logo: "https://via.placeholder.com/400x200?text=Sponsor+1",
     },
     {
       id: 2,
       name: "Sponsor 2",
-      logo: "https://via.placeholder.com/250x150?text=Sponsor+2",
-      about: "Supporting cultural events and traditional art forms for decades.",
+      logo: "https://via.placeholder.com/400x200?text=Sponsor+2",
     },
     {
       id: 3,
       name: "Sponsor 3",
-      logo: "https://via.placeholder.com/250x150?text=Sponsor+3",
-      about: "Dedicated to community service and social welfare initiatives.",
+      logo: "https://via.placeholder.com/400x200?text=Sponsor+3",
     },
     {
       id: 4,
       name: "Sponsor 4",
-      logo: "https://via.placeholder.com/250x150?text=Sponsor+4",
-      about: "A proud supporter of Brothers Ramleela Committee for many years.",
+      logo: "https://via.placeholder.com/400x200?text=Sponsor+4",
     },
   ];
 
   return (
     <section
       id="sponsors"
-      className="bg-[#fff6e9] pt-4 pb-12 px-6 md:px-12 lg:px-20 text-center relative overflow-hidden"
+      className="bg-[#fff6e9] pt-4 pb-12 px-6 md:px-12 lg:px-20 text-center relative"
     >
       {/* Heading */}
-      <h2 className="text-3xl md:text-4xl font-bold text-red-800 mb-3">
+      <h2 className="text-3xl md:text-4xl font-bold text-red-800 mb-8">
         Our Sponsors
       </h2>
-      <p className="text-gray-700 max-w-2xl mx-auto mb-10">
-        We thank our generous sponsors for supporting Brothers Ramleela Committee
-        and helping us keep this tradition alive.
-      </p>
 
-      {/* Mobile → Slider */}
-      <div className="block md:hidden">
-        <Swiper
-          modules={[Navigation, Pagination]}
-          spaceBetween={16}
-          slidesPerView={1}
-          navigation
-          pagination={{ clickable: true }}
-        >
-          {sponsors.map((sponsor) => (
-            <SwiperSlide key={sponsor.id}>
-              <div className="bg-white shadow-md rounded-xl flex overflow-hidden min-h-[200px] border border-black hover:shadow-lg hover:scale-[1.02] transition duration-300">
-                {/* Logo */}
-                <div className="w-1/2 flex items-center justify-center bg-gray-50">
-                  <img
-                    src={sponsor.logo}
-                    alt={sponsor.name}
-                    className="max-h-24 object-contain"
-                  />
-                </div>
-                {/* About */}
-                <div className="w-1/2 flex flex-col justify-center p-5 text-left">
-                  <h3 className="text-lg font-bold text-red-800">
-                    {sponsor.name}
-                  </h3>
-                  <p className="text-gray-600 text-sm mt-1">{sponsor.about}</p>
-                </div>
-              </div>
-            </SwiperSlide>
-          ))}
-        </Swiper>
-      </div>
-
-      {/* Desktop → Grid */}
-      <div className="hidden md:grid grid-cols-1 md:grid-cols-2 gap-8">
+      {/* Grid - Always 2x2 */}
+      <div className="grid grid-cols-2 gap-10 max-w-5xl mx-auto">
         {sponsors.map((sponsor) => (
-          <div
-            key={sponsor.id}
-            className="bg-white shadow-md rounded-xl flex overflow-hidden min-h-[200px] border border-black hover:shadow-lg hover:scale-[1.02] transition duration-300"
-          >
-            {/* Logo */}
-            <div className="w-1/2 flex items-center justify-center bg-gray-50">
+          <div key={sponsor.id} className="flex flex-col items-center w-full">
+            {/* Wide Box with Image */}
+            <div className="w-full h-36 bg-white border border-black rounded-xl shadow-md flex items-center justify-center hover:shadow-lg transition">
               <img
                 src={sponsor.logo}
                 alt={sponsor.name}
-                className="max-h-24 object-contain"
+                className="max-h-28 max-w-[80%] object-contain"
               />
             </div>
-            {/* About */}
-            <div className="w-1/2 flex flex-col justify-center p-5 text-left">
-              <h3 className="text-lg font-bold text-red-800">{sponsor.name}</h3>
-              <p className="text-gray-600 text-sm mt-1">{sponsor.about}</p>
-            </div>
+            {/* Name outside box */}
+            <h3 className="mt-3 text-lg font-semibold text-red-800">
+              {sponsor.name}
+            </h3>
           </div>
         ))}
       </div>

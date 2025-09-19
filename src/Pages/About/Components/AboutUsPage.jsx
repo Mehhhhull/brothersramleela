@@ -98,7 +98,7 @@ const AboutUsPage = () => {
           {/* Header */}
           <h2 className="text-3xl lg:text-5xl font-bold mb-8 text-center lg:text-left" style={{ color: '#8B2635' }}>
             <span className="block text-left break-words text-2xl sm:text-3xl md:text-4xl lg:text-5xl">
-              The Origins of<br className="block sm:hidden"/>Brothers Ramleela
+              The Origins of <br className="block sm:hidden"/>Brothers Ramleela
             </span>
           </h2>
           

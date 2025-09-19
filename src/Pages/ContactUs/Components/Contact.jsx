@@ -10,7 +10,7 @@ export default function Contact() {
     >
       <div className="max-w-6xl mx-auto px-6 relative z-10">
         {/* Heading */}
-        <h2 className="text-4xl font-bold text-center text-orange-800 mb-10">
+        <h2 className="text-4xl font-bold text-center text-red-800 mb-10">
           Contact Us
         </h2>
 
@@ -31,7 +31,7 @@ export default function Contact() {
                 </div>
                 <div className="flex items-center gap-3 sm:gap-4">
                   <Mail className="text-orange-600 w-6 h-6" />
-                  <span className="text-base sm:text-lg">jiteshsabharwal@gmail.com</span>
+                  <span className="text-base sm:text-lg">brothersramleela@gmail.com</span>
                 </div>
                 <div className="flex items-center gap-3 sm:gap-4">
                   <MapPin className="text-orange-600 w-7 h-7" />

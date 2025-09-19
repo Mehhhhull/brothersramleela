@@ -61,7 +61,7 @@ export default function Hero() {
             <span>Watch Live on YouTube</span>
           </a>
           <a
-            href="#volunteer"
+            href="https://docs.google.com/forms/d/e/1FAIpQLSfB8QdElE7JAcRIY85h1DRmNQKgCYdfd3POgDsLERcr6QnnBQ/viewform?usp=sharing&ouid=112525111727756210413"
             className="flex items-center justify-center space-x-2 bg-white/10 border border-white px-6 py-3 rounded font-semibold hover:bg-white/20 transition"
           >
             <FaUsers />
