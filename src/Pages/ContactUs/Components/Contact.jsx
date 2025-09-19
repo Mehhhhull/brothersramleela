@@ -31,7 +31,7 @@ export default function Contact() {
                 </div>
                 <div className="flex items-center gap-3 sm:gap-4">
                   <Mail className="text-orange-600 w-6 h-6" />
-                  <span className="text-base sm:text-lg">brothersramleela@gmail.com</span>
+                  <span className="text-base sm:text-lg">jiteshsabharwal@gmail.com</span>
                 </div>
                 <div className="flex items-center gap-3 sm:gap-4">
                   <MapPin className="text-orange-600 w-7 h-7" />

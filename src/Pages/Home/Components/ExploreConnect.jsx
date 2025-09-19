@@ -15,7 +15,7 @@ export default function ExploreConnect() {
     <section className="bg-[#FDEEDC] py-16 px-6 text-center relative overflow-hidden">
       {/* Mandala Confetti Background behind all content */}
       <div className="absolute inset-0 w-full h-full bg-[url('/assets/mandala.png')] bg-repeat opacity-10 pointer-events-none z-0"></div>
-      <div className="relative z-10 max-w-4xl mx-auto bg-gradient-to-br from-yellow-100 via-pink-100 to-orange-100 rounded-2xl shadow-2xl border-4 border-yellow-400 p-6 md:p-10">
+  <div className="relative z-10 max-w-4xl mx-auto bg-[#FDEEDC] rounded-2xl shadow-2xl border-4 border-yellow-400 p-6 md:p-10">
         <h2 className="text-3xl md:text-4xl font-bold text-[#7B0000] mb-10 font-serif drop-shadow-lg">
           Explore & Connect
         </h2>
@@ -25,7 +25,7 @@ export default function ExploreConnect() {
               <Link
                 key={index}
                 to={link.to}
-                className="bg-yellow-400 hover:bg-yellow-500 transition-colors duration-200 rounded-xl shadow-lg py-6 flex flex-col items-center justify-center text-[#7B0000] font-bold border-2 border-black-300"
+                className="bg-yellow-400 hover:bg-yellow-500 transition-colors duration-200 rounded-xl shadow-lg py-6 flex flex-col items-center justify-center text-[#7B0000] font-bold border-2 border-yellow-400"
               >
                 <div className="mb-2">{link.icon}</div>
                 <span>{link.name}</span>
@@ -36,7 +36,7 @@ export default function ExploreConnect() {
                 href={link.to}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="bg-yellow-400 hover:bg-yellow-500 transition-colors duration-200 rounded-xl shadow-lg py-6 flex flex-col items-center justify-center text-[#7B0000] font-bold border-2 border-pink-300"
+                className="bg-yellow-400 hover:bg-yellow-500 transition-colors duration-200 rounded-xl shadow-lg py-6 flex flex-col items-center justify-center text-[#7B0000] font-bold border-2 border-yellow-400"
               >
                 <div className="mb-2">{link.icon}</div>
                 <span>{link.name}</span>

@@ -66,8 +66,9 @@ const AboutUsPage = () => {
         {/* About Us Section */}
         <section className="mb-16">
           {/* Header */}
-          <h1 className="text-5xl lg:text-6xl font-bold mb-6 text-center lg:text-left" style={{ color: '#8B2635' }}>
-            46 Years of Devotion, <br/> Tradition & Culture
+          <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-6 text-left" style={{ color: '#8B2635' }}>
+            <span className="block whitespace-nowrap">46 Years of Devotion,</span>
+            <span className="block whitespace-nowrap">Tradition & Culture</span>
           </h1>
           
           <div className="flex flex-col lg:flex-row items-center gap-12">
@@ -95,8 +96,10 @@ const AboutUsPage = () => {
         {/* Cultural Significance Section */}
         <section className="mb-16">
           {/* Header */}
-          <h2 className="text-4xl lg:text-5xl font-bold mb-8 text-center lg:text-left" style={{ color: '#8B2635' }}>
-            The Origins of Brothers Ramleela
+          <h2 className="text-3xl lg:text-5xl font-bold mb-8 text-center lg:text-left" style={{ color: '#8B2635' }}>
+            <span className="block text-left break-words text-2xl sm:text-3xl md:text-4xl lg:text-5xl">
+              The Origins of<br className="block sm:hidden"/>Brothers Ramleela
+            </span>
           </h2>
           
           <div className="flex flex-col lg:flex-row items-center gap-12">
@@ -118,7 +121,7 @@ const AboutUsPage = () => {
         {/* Committee Members Section */}
         <section className="mb-16">
           <h2 className="text-3xl md:text-4xl font-bold text-center mb-8 md:mb-12 px-4" style={{ color: '#8B2635' }}>
-            Meet Our Committee Members
+            Meet Our<br/>Committee Members
           </h2>
 
           <div className="relative max-w-4xl mx-auto px-2 sm:px-4">
@@ -144,7 +147,7 @@ const AboutUsPage = () => {
                   </div>
                   <div className="w-full md:w-3/5 text-center md:text-left">
                     <h3 className="text-xl sm:text-2xl md:text-3xl font-bold mb-2 text-gray-800">
-                      {committeeMembers[currentMember].name}
+                      <span className="block whitespace-nowrap text-left">{committeeMembers[currentMember].name}</span>
                     </h3>
                     <p className="text-sm sm:text-base md:text-lg mb-2 md:mb-4" style={{ color: '#8B2635' }}>{committeeMembers[currentMember].subtitle}</p>
                     <p className="text-xs sm:text-sm md:text-base text-gray-700 leading-relaxed">{committeeMembers[currentMember].description}</p>
@@ -181,8 +184,8 @@ const AboutUsPage = () => {
 
         {/* Schedule Section */}
         <section className="mb-16">
-          <h2 className="text-4xl font-bold text-center mb-12" style={{ color: '#8B2635' }}>
-           Ramleela 2025 Schedule-
+          <h2 className="text-3xl font-bold text-center mb-12" style={{ color: '#8B2635' }}>
+           Ramleela 2025<br/>Schedule
           </h2>
 
           <div className="max-w-4xl mx-auto">

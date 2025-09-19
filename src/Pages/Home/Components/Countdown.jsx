@@ -40,7 +40,7 @@ export default function Countdown() {
 
 
   return (
-    <section className="relative overflow-hidden bg-gradient-to-br from-yellow-100 via-pink-100 to-orange-100 py-12 md:py-16 px-4 sm:px-6 text-center">
+  <section className="relative overflow-hidden bg-[#FDEEDC] py-12 md:py-16 px-4 sm:px-6 text-center">
       {/* Mandala Confetti Background behind all content */}
       <div className="absolute inset-0 w-full h-full bg-[url('/assets/mandala.png')] bg-repeat opacity-10 pointer-events-none z-0"></div>
   <div className="relative z-10 max-w-2xl mx-auto bg-gradient-to-r from-[#fff7ec] to-[#fff] border-4 border-yellow-400 rounded-2xl shadow-2xl p-4 md:p-8">

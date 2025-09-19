@@ -72,7 +72,7 @@ export default function Hero() {
         {/* Bottom Info */}
         <div className="mt-6 flex flex-col items-center space-y-2">
           <p className="text-sm text-gray-300">
-            Since 1978 • Permanent Colony
+            Since 1980 • Bhai Parmanand Colony
           </p>
         </div>
 
