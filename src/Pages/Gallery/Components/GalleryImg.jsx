@@ -19,19 +19,7 @@ export function GalleryImg() {
           <div><img src="/assets/ramleela5.jpeg" alt="Ramleela 5" className="w-full h-auto object-cover" /></div>
           <div><img src="/assets/ramleela6.jpeg" alt="Ramleela 6" className="w-full h-auto object-cover" /></div>
 
-          {/* Video */}
-          <div className="col-span-1 sm:col-span-2 md:col-span-3 lg:col-span-2">
-            <video
-              autoPlay
-              loop
-              muted
-              playsInline
-              className="w-full h-auto rounded-lg shadow-md object-cover"
-            >
-              <source src="/assets/ramleela-video.mp4" type="video/mp4" />
-              Your browser does not support the video tag.
-            </video>
-          </div>
+         
 
           {/* More Images */}
           <div><img src="/assets/ramleela7.jpg" alt="Ramleela 7" className="w-full h-auto object-cover" /></div>
