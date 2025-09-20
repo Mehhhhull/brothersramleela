@@ -1,6 +1,8 @@
+import { FaFacebook, FaInstagram, FaYoutube } from "react-icons/fa";
+
 export default function Footer() {
   return (
-    <footer style={{ backgroundColor: '#7B0000' }} className="text-white py-16">
+    <footer style={{ backgroundColor: "#7B0000" }} className="text-white py-16">
       <div className="max-w-7xl mx-auto px-6">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-12 text-center md:text-left">
           {/* Left Section - Organization Name */}
@@ -47,25 +49,64 @@ export default function Footer() {
             <h3 className="text-xl font-semibold mb-4">Brothers Ramleela Committee</h3>
             <div className="space-y-3 text-gray-300">
               <p className="flex items-center gap-2 justify-center md:justify-end">
-                📞 <span>+91 9876543210</span>
+                📞{" "}
+                <a href="tel:+919876543210" className="hover:text-white">
+                  +91 9876543210
+                </a>
               </p>
               <p className="flex items-center gap-2 justify-center md:justify-end">
-                📞 <span>+91 9910972300</span>
+                📞{" "}
+                <a href="tel:+919910972300" className="hover:text-white">
+                  +91 9910972300
+                </a>
               </p>
               <p className="flex gap-2 justify-center md:justify-end leading-relaxed text-sm md:text-base">
                 <span>
                   📍 Brothers Ramlila Ground, <br />
                   Bhai Parmanand Colony, Mukherjee Nagar, <br />
-                  Delhi, 110033
+                  Delhi, 110009
                 </span>
               </p>
-
               <p className="flex items-center gap-2 justify-center md:justify-end">
-                ✉️ <span>brothersramleela@gmail.com</span>
+                ✉️{" "}
+                <a
+                  href="mailto:brothersramleela@gmail.com"
+                  className="hover:text-white"
+                >
+                  brothersramleela@gmail.com
+                </a>
               </p>
             </div>
           </div>
         </div>
+      </div>
+
+      {/* Social Media Section */}
+      <div className="mt-10 flex justify-center gap-6">
+        <a
+          href="https://www.facebook.com/share/1HskD5acKL/?mibextid=wwXIfr"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-gray-300 hover:text-white text-2xl"
+        >
+          <FaFacebook />
+        </a>
+        <a
+          href="https://www.instagram.com/brothersramleelacommittee?igsh=eHpzZ3MzdjVreDh3&utm_source=qr"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-gray-300 hover:text-white text-2xl"
+        >
+          <FaInstagram />
+        </a>
+        <a
+          href="https://youtube.com/@brothersramleelacommittee?si=7XiH9BS7nJUWwRMw"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-gray-300 hover:text-white text-2xl"
+        >
+          <FaYoutube />
+        </a>
       </div>
 
       {/* Copyright Section */}
@@ -103,7 +144,7 @@ export default function Footer() {
                 </svg>
                 <span className="text-gray-500">
                   Managed by{" "}
-                  <span className="text-blue-400 font-medium">AUM CONSULTANT</span>
+                  <span className="text-blue-400 font-medium">AUM CONSULTANTS</span>
                 </span>
               </div>
             </div>

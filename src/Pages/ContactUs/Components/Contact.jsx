@@ -25,19 +25,32 @@ export default function Contact() {
                 <div className="flex items-center gap-3 sm:gap-4">
                   <Phone className="text-orange-600 w-6 h-6" />
                   <span className="text-base sm:text-lg">
-                    +91 9876543210 <br/>
-                    +91 9910972300
+                    <a href="tel:+919876543210" className="hover:text-red-700">
+                      +91 9876543210
+                    </a>
+                    <br />
+                    <a href="tel:+919910972300" className="hover:text-red-700">
+                      +91 9910972300
+                    </a>
                   </span>
                 </div>
                 <div className="flex items-center gap-3 sm:gap-4">
                   <Mail className="text-orange-600 w-6 h-6" />
-                  <span className="text-base sm:text-lg">brothersramleela@gmail.com</span>
+                  <span className="text-base sm:text-lg">
+                    <a
+                      href="mailto:brothersramleela@gmail.com"
+                      className="hover:text-red-700"
+                    >
+                      brothersramleela@gmail.com
+                    </a>
+                  </span>
                 </div>
                 <div className="flex items-center gap-3 sm:gap-4">
                   <MapPin className="text-orange-600 w-7 h-7" />
                   <span className="text-base sm:text-lg">
-                    Brothers Ramlila Ground<br/>
-                    Bhai Parmanand Colony, Mukherjee Nagar,<br/>Delhi, 110033
+                    Brothers Ramlila Ground <br />
+                    Bhai Parmanand Colony, Mukherjee Nagar, <br />
+                    Delhi, 110033
                   </span>
                 </div>
               </div>
@@ -61,9 +74,9 @@ export default function Contact() {
         </div>
 
         {/* Social Media Links */}
-  <div className="flex flex-wrap justify-center gap-6 sm:gap-8 mt-12">
+        <div className="flex flex-wrap justify-center gap-6 sm:gap-8 mt-12">
           <a
-            href="https://facebook.com"
+            href="https://www.facebook.com/share/1HskD5acKL/?mibextid=wwXIfr"
             target="_blank"
             rel="noopener noreferrer"
             className="hover:opacity-80 transition"
@@ -71,7 +84,7 @@ export default function Contact() {
             <FaFacebook className="w-10 h-10 text-blue-600" />
           </a>
           <a
-            href="https://instagram.com"
+            href="https://www.instagram.com/brothersramleelacommittee?igsh=eHpzZ3MzdjVreDh3&utm_source=qr"
             target="_blank"
             rel="noopener noreferrer"
             className="hover:opacity-80 transition"
@@ -79,7 +92,7 @@ export default function Contact() {
             <FaInstagram className="w-10 h-10 text-pink-600" />
           </a>
           <a
-            href="https://youtube.com"
+            href="https://youtube.com/@brothersramleelacommittee?si=7XiH9BS7nJUWwRMw"
             target="_blank"
             rel="noopener noreferrer"
             className="hover:opacity-80 transition"

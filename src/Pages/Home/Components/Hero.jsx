@@ -54,7 +54,7 @@ export default function Hero() {
         {/* Buttons */}
         <div className="mt-6 flex flex-col md:flex-row gap-4 justify-center">
           <a
-            href="#live"
+            href="https://youtube.com/@brothersramleelacommittee?si=7XiH9BS7nJUWwRMw"
             className="flex items-center justify-center space-x-2 bg-yellow-500 text-[#7B0000] px-6 py-3 rounded font-semibold hover:bg-yellow-400 transition"
           >
             <FaYoutube />
