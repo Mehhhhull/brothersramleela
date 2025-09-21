@@ -12,7 +12,7 @@ export default function Navbar() {
           <img
             src="/assets/logo.jpg"
             alt="Brothers Ramleela Logo"
-            className="w-12 h-12 rounded-full object-cover"
+            className="w-15 h-15 rounded-full object-cover"
           />
           <div className="leading-tight">
             <h1 className="text-white text-lg font-semibold">
