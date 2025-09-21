@@ -6,7 +6,7 @@ export default function ExploreConnect() {
     { name: "About Us", icon: <User size={20} />, to: "/about", type: "internal" },
     { name: "Events", icon: <Calendar size={20} />, to: "/events", type: "internal" },
     { name: "Gallery", icon: <Image size={20} />, to: "/gallery", type: "internal" },
-    { name: "Volunteer", icon: <Heart size={20} />, to: "https://forms.gle/your-volunteer-form", type: "external" },
+    { name: "Volunteer", icon: <Heart size={20} />, to: "https://docs.google.com/forms/d/e/1FAIpQLSfB8QdElE7JAcRIY85h1DRmNQKgCYdfd3POgDsLERcr6QnnBQ/viewform?usp=sharing&ouid=112525111727756210413", type: "external" },
     { name: "Donate", icon: <span className="font-bold text-lg">₹</span>, to: "/contactus#donations", type: "internal" },
     { name: "Contact Us", icon: <Phone size={20} />, to: "/contactus", type: "internal" },
   ];
