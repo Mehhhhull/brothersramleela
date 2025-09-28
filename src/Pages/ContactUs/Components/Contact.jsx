@@ -50,7 +50,7 @@ export default function Contact() {
                   <span className="text-base sm:text-lg">
                     Brothers Ramlila Ground <br />
                     Bhai Parmanand Colony, Mukherjee Nagar, <br />
-                    Delhi, 110033
+                    Delhi, 110009
                   </span>
                 </div>
               </div>
