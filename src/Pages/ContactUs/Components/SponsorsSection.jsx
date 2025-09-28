@@ -1,53 +1,34 @@
 export default function SponsorsSection() {
   const sponsors = [
-    {
-      id: 1,
-      name: "Sponsor 1",
-      logo: "https://via.placeholder.com/400x200?text=Sponsor+1",
-    },
-    {
-      id: 2,
-      name: "Sponsor 2",
-      logo: "https://via.placeholder.com/400x200?text=Sponsor+2",
-    },
-    {
-      id: 3,
-      name: "Sponsor 3",
-      logo: "https://via.placeholder.com/400x200?text=Sponsor+3",
-    },
-    {
-      id: 4,
-      name: "Sponsor 4",
-      logo: "https://via.placeholder.com/400x200?text=Sponsor+4",
-    },
+    { id: 1, name: "Sponsor 1", logo: "assets/sponsor1.jpg" },
+    { id: 2, name: "Sponsor 2", logo: "assets/sponsor2.jpg" },
+    { id: 3, name: "Sponsor 3", logo: "assets/sponsor3.jpg" },
+    { id: 4, name: "Sponsor 4", logo: "assets/sponsor4.jpg" },
   ];
 
   return (
     <section
       id="sponsors"
-      className="bg-[#fff6e9] pt-4 pb-12 px-6 md:px-12 lg:px-20 text-center relative"
+      className="bg-[#fff6e9] pt-12 pb-16 px-6 md:px-12 lg:px-20 text-center relative"
     >
       {/* Heading */}
-      <h2 className="text-3xl md:text-4xl font-bold text-red-800 mb-8">
+      <h2 className="text-4xl md:text-5xl font-bold text-red-800 mb-16">
         Our Sponsors
       </h2>
 
-      {/* Grid - Always 2x2 */}
-      <div className="grid grid-cols-2 gap-10 max-w-5xl mx-auto">
+      {/* Grid - 1 column on mobile, 2 columns on desktop */}
+      <div className="grid grid-cols-1 sm:grid-cols-2 gap-12 max-w-5xl mx-auto">
         {sponsors.map((sponsor) => (
-          <div key={sponsor.id} className="flex flex-col items-center w-full">
-            {/* Wide Box with Image */}
-            <div className="w-full h-36 bg-white border border-black rounded-xl shadow-md flex items-center justify-center hover:shadow-lg transition">
-              <img
-                src={sponsor.logo}
-                alt={sponsor.name}
-                className="max-h-28 max-w-[80%] object-contain"
-              />
-            </div>
-            {/* Name outside box */}
-            <h3 className="mt-3 text-lg font-semibold text-red-800">
-              {sponsor.name}
-            </h3>
+          <div
+            key={sponsor.id}
+            className="flex items-center justify-center w-full"
+          >
+            {/* Large image with subtle hover effect */}
+            <img
+              src={sponsor.logo}
+              alt={sponsor.name}
+              className="w-64 h-64 sm:w-72 sm:h-72 md:w-80 md:h-80 lg:w-96 lg:h-96 object-contain rounded-xl shadow-lg transition-transform duration-300 hover:scale-105"
+            />
           </div>
         ))}
       </div>
