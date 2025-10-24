@@ -1,8 +1,8 @@
 import { useEffect, useState } from "react";
 
 export default function Countdown() {
-  // Set countdown to 23rd September 2025 at midnight
-  const targetDate = new Date('2025-09-23T00:00:00').getTime();
+  // Set countdown to 10th October 2026 at midnight
+  const targetDate = new Date('2026-10-10T00:00:00').getTime();
   const [timeLeft, setTimeLeft] = useState(getTimeRemaining());
 
   function getTimeRemaining() {
@@ -38,17 +38,19 @@ export default function Countdown() {
     return () => clearInterval(interval);
   }, []);
 
-
   return (
-  <section className="relative overflow-hidden bg-[#FDEEDC] py-12 md:py-16 px-4 sm:px-6 text-center">
+    <section className="relative overflow-hidden bg-[#FDEEDC] py-12 md:py-16 px-4 sm:px-6 text-center">
       {/* Mandala Confetti Background behind all content */}
       <div className="absolute inset-0 w-full h-full bg-[url('/assets/mandala.png')] bg-repeat opacity-10 pointer-events-none z-0"></div>
-  <div className="relative z-10 max-w-2xl mx-auto bg-gradient-to-r from-[#fff7ec] to-[#fff] border-4 border-yellow-400 rounded-2xl shadow-2xl p-4 md:p-8">
+      
+      <div className="relative z-10 max-w-2xl mx-auto bg-gradient-to-r from-[#fff7ec] to-[#fff] border-4 border-yellow-400 rounded-2xl shadow-2xl p-4 md:p-8">
         {/* Title */}
         <h2 className="text-2xl sm:text-3xl md:text-4xl font-extrabold text-[#B22222]">
           Ramleela begins on
         </h2>
-  <p className="text-[#B22222] mt-2 mb-6 text-lg sm:text-xl font-bold tracking-wide">23rd September 2025</p>
+        <p className="text-[#B22222] mt-2 mb-6 text-lg sm:text-xl font-bold tracking-wide">
+          10th October 2026
+        </p>
 
         {/* Countdown - clean vibrant cards */}
         <div className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-8 mb-8">
@@ -79,8 +81,7 @@ export default function Countdown() {
         </div>
 
         {/* Footer text */}
-        <p className="text-[#B22222]
-         text-base sm:text-lg md:text-xl font-semibold tracking-wide">
+        <p className="text-[#B22222] text-base sm:text-lg md:text-xl font-semibold tracking-wide">
           Get ready for an unforgettable spiritual journey
         </p>
       </div>
