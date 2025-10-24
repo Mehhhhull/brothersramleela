@@ -1,4 +1,4 @@
-import { FaFacebook, FaInstagram, FaYoutube } from "react-icons/fa";
+import { FaFacebook, FaInstagram, FaYoutube, FaLinkedin } from "react-icons/fa";
 
 export default function Footer() {
   return (
@@ -129,9 +129,27 @@ export default function Footer() {
                     clipRule="evenodd"
                   />
                 </svg>
-                <span className="text-gray-500">
+                <span className="text-gray-500 flex items-center gap-2">
                   Designed & Developed by{" "}
-                  <span className="text-blue-400 font-medium">THREESIXTYSPACE</span>
+                  <span className="text-blue-400 font-medium flex items-center gap-2">
+                    MKS
+                    <a
+                      href="https://www.instagram.com/mehulkumarsinghh?igsh=Z28zZXlqMmlwdmV2"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="hover:text-white text-base"
+                    >
+                      <FaInstagram />
+                    </a>
+                    <a
+                      href="https://www.linkedin.com/in/mehul-kumar-singh-655b5432b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="hover:text-white text-base"
+                    >
+                      <FaLinkedin />
+                    </a>
+                  </span>
                 </span>
               </div>
               <div className="flex items-center gap-2">
